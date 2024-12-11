@@ -1,8 +1,11 @@
 let countdown;
 let timerDisplay = document.querySelector('.display__time-left');
 let endTime = document.querySelector('.display__end-time');
+const buttons = document.querySelectorAll('[data-time]');
 
 const timer = seconds => {
+    // clear existing timers
+    clearInterval(countdown);
     const now = Date.now();
     const then = now + seconds * 1000;
     // run this once because setInterval starts after 1 second
@@ -37,4 +40,9 @@ const displayEndTime = timestamp => {
     }${minutes}`;
 };
 
-timer(1620);
+function startTimer() {
+    const seconds = parseInt(this.dataset.time);
+    timer(seconds);
+}
+
+buttons.forEach(button => button.addEventListener('click', startTimer));
