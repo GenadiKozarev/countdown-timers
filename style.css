@@ -2,8 +2,7 @@ html {
     font-family: 'Faculty Glyphic', 'Trebuchet MS', Arial, sans-serif;
     font-size: 10px;
     box-sizing: border-box;
-    background: #242baa;
-    background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+    background: linear-gradient(90deg, #43a6f8 0%, #4791d7 50%, #0c4aa6 100%);
 }
 
 body {
