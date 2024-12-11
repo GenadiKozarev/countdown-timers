@@ -4,7 +4,7 @@ const timer = seconds => {
     const now = Date.now();
     const then = now + seconds * 1000;
     // run this once because setInterval starts after 1 second
-    displayTimeLeft(secondsLeft);
+    displayTimeLeft(seconds);
     countdown = setInterval(() => {
         const secondsLeft = Math.round((then - Date.now()) / 1000);
         if (secondsLeft < 0) {
