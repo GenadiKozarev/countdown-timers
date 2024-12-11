@@ -1,6 +1,6 @@
 let countdown;
-let timerDisplay = document.querySelector('.display__time-left');
-let endTime = document.querySelector('.display__end-time');
+let timerDisplay = document.querySelector('.display-time-left');
+let endTime = document.querySelector('.display-end-time');
 const buttons = document.querySelectorAll('[data-time]');
 
 const timer = seconds => {
