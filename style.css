@@ -1,5 +1,5 @@
 html {
-    font-family: 'Inconsolata';
+    font-family: 'helvetica neue';
     font-size: 10px;
     box-sizing: border-box;
 }
@@ -15,4 +15,67 @@ body {
     );
     height: 100vh;
     width: 100vw;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.timer-controls {
+    display: flex;
+}
+
+.timer-controls > * {
+    flex: 1;
+}
+
+.timer-controls form {
+    display: flex;
+    flex: 1;
+}
+
+.timer-controls input {
+    flex: 1;
+    border: 0;
+    padding: 2rem;
+}
+
+.timer-button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.75rem;
+    background: #0000001a;
+    border-bottom: 0.3rem solid #00000033;
+    border-right: 0.3rem solid #00000033;
+    padding: 1rem;
+}
+
+.timer-button:hover,
+.timer-button:focus {
+    background: #00000033;
+    outline: 0;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.display-time-left {
+    font-size: 20rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0.4rem 0.4rem 0 #0000000d;
+}
+
+.display-end-time {
+    font-size: 4rem;
+    color: #ffffff92;
 }
